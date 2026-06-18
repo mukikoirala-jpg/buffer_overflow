@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import socket
 
-IP = "192.168.0.14" 
+IP = "000.000.0.00" 
 PORT = 9999
 PREFIX = "TURN /.:/"
 
