@@ -3,7 +3,7 @@ import socket
 import time
 import sys
 
-IP = "192.168.0.14" 
+IP = "000.000.0.00" 
 PORT = 9999
 PREFIX = "TURN /.:/" 
 SIZE = 100  
